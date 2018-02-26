@@ -2,9 +2,8 @@ const hangmanState = (state = {
   word: [],
   remainingAttempts: 10,
   letters: [],
-  //gameState: 'WAITING_FOR_WORD'
-  gameState: 'GAME_IN_PROGRESS',
-  word: [{letter: 'H', visible: false},{letter: 'E', visible: false},{letter: 'L', visible: false},{letter: 'L', visible: false},{letter: 'O', visible: false}]
+  gameState: 'WAITING_FOR_WORD',
+  word: []
 
 }, action) => {
   switch(action.type){

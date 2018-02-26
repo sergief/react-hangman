@@ -34,7 +34,7 @@ class Hangman extends Component {
 
     if(gameState==='GAME_IN_PROGRESS'){
       let remainingLifes = [];
-      for (let i = 0; i < remainingAttempts; i++) {
+      for (let i = 0; i <= remainingAttempts; i++) {
         remainingLifes.push(<Icon name='heart' color = 'red' size = 'big' />);
       }
       return (
@@ -51,7 +51,7 @@ class Hangman extends Component {
     }
     else if(gameState==='GAME_WON'){
       return(
-        <Message info>
+        <Message info size = 'large'>
         <Message.Header>You Win!</Message.Header>
         {hiddenWord}: {definition}
         </Message>
@@ -59,9 +59,16 @@ class Hangman extends Component {
     }
     else if(gameState==='GAME_LOST'){
       return(
-        <Message negative>
+        <Message negative size = 'large'>
         <Message.Header>Game Over</Message.Header>
         {hiddenWord}: {definition}
+        </Message>
+      )
+    }
+    else if(gameState==='WAITING_FOR_WORD'){
+      return(
+        <Message info size = 'large'>
+        <Message.Header> Press the button to start a new game </Message.Header>
         </Message>
       )
     }

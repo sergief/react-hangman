@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom'
 import {createStore} from 'redux'
 import Hangman from './components/Hangman'
 import GameMenu from './components/GameMenu'
+import UsedLetters from './components/UsedLetters'
 import hangmanState from './reducers'
 import {selectLetter, selectWord} from './actions'
 import logo from './logo.svg';
-import Dictionary from './data/dictionary_compact.json'
+import Dictionary from './data/dictionary.json'
 import 'semantic-ui-css/semantic.min.css';
 const getRandomWord = () =>{
   let ret,
@@ -31,6 +32,9 @@ const render = () => ReactDOM.render(
       gameState = {store.getState().gameState}
       onLetterTyped = {letter => {store.dispatch(selectLetter(letter.toUpperCase())) }}
       selectedWord = {store.getState().word}
+    />
+    <UsedLetters
+      letters = {store.getState().letters}
     />
 </div>, rootEl
 
