@@ -9,7 +9,7 @@
     "react-scripts": "1.1.1",
     "redux": "*",
     "semantic-ui-css": "^2.3.0",
-    "semantic-ui-react": "*"
+    "semantic-ui-react": "^0.78.2"
   },
   "scripts": {
     "postinstall": "curl https://raw.githubusercontent.com/adambom/dictionary/master/dictionary.json --output ./src/data/dictionary.json",

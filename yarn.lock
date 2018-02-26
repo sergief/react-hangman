@@ -5600,7 +5600,7 @@ semantic-ui-css@^2.3.0:
   dependencies:
     jquery x.*
 
-semantic-ui-react@*:
+semantic-ui-react@^0.78.2:
   version "0.78.2"
   resolved "https://registry.yarnpkg.com/semantic-ui-react/-/semantic-ui-react-0.78.2.tgz#2337097b16f0770d91dded2625db30e49390d3c1"
   dependencies:
