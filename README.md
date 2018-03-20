@@ -7,6 +7,8 @@ It also uses [Semantic-UI](https://react.semantic-ui.com/) as a UI component lib
 
 The supported language is `english`, thanks to the dictionary published by [adambom](https://github.com/adambom/dictionary)
 
+# Play it!
+You can play the game and see how it looks [here](https://sergief.github.io/react-hangman/)
 # How to use it
 Install the package dependencies:
 ```bash
